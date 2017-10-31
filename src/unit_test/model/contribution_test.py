@@ -1,11 +1,6 @@
 from model.Contribution import Contribution, parse_date, parse_zipcode
 
 
-def test_parse_date_1():
-    """If date is future, return None"""
-    assert parse_date('01013000') is None
-
-
 def test_parse_date_2():
     """non-int char inside, return None"""
     assert parse_date('010b3000') is None
